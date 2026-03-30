@@ -2,7 +2,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.0/firebas
 import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-auth.js";
 
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
+  apiKey: "AIzaSyBUz8KjoRMDPedR-3DTUQYMcbZglOoFXTs",
   authDomain: "event-registration-syste-aabf7.firebaseapp.com",
   projectId: "event-registration-syste-aabf7"
 };
