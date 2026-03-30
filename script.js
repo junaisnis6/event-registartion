@@ -35,7 +35,7 @@ try {
         event: event
     });
 
-    alert("Registration Successful ✅");
+    alert("🎉 Registered Successfully!");
 
 } catch (error) {
     console.error("Error adding document: ", error);
