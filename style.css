@@ -53,3 +53,17 @@ input, select {
     color: #667eea;
     font-weight: bold;
 }
+p {
+    color: #666;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: #667eea;
+    font-size: 14px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
