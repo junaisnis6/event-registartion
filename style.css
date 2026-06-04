@@ -1,0 +1,173 @@
+/* Importing a cleaner, more versatile font */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap');
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Adding a high-quality abstract background image */
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    color: #1a202c;
+}
+
+.container {
+    width: 100%;
+    max-width: 420px;
+    padding: 40px;
+    /* Glassmorphism Effect */
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 24px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+}
+
+/* Adding a slot for an illustrative image/logo */
+.container::before {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    background: url('https://cdn-icons-png.flaticon.com/512/3135/3135715.png'); /* Change this URL to your logo */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 1.8rem;
+    color: #2d3748;
+    letter-spacing: -0.5px;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #4a5568;
+    margin-bottom: 24px;
+}
+
+input, select {
+    width: 100%;
+    padding: 14px;
+    margin: 12px 0;
+    border-radius: 12px;
+    border: 2px solid #e2e8f0;
+    background: white;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
+}
+
+.btn {
+    width: 100%;
+    padding: 16px;
+    margin-top: 20px;
+    background: #667eea;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    box-shadow: 0 10px 15px -3px rgba(118, 75, 162, 0.4);
+    transition: all 0.2s ease;
+}
+
+.btn:hover {
+    transform: scale(1.02);
+    box-shadow: 0 20px 25px -5px rgba(118, 75, 162, 0.4);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #764ba2;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+.nav a:hover {
+    color: #667eea;
+}
+
+p {
+    color: #718096;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+a {
+    color: #667eea;
+    font-weight: 600;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    font-size: 14px;
+    text-align: center;
+}
+
+th {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    font-weight: 600;
+}
+
+td {
+    border-bottom: 1px solid #e2e8f0;
+    border: 1px solid #e2e8f0; /* soft border */
+}
+
+tr:hover {
+    background: rgba(102, 126, 234, 0.1);
+    transition: 0.2s;
+}
+
+tr:nth-child(even) {
+    background: rgba(0,0,0,0.02);
+}
+.table-wrapper {
+    overflow-x: auto;
+    margin-top: 20px;
+}
+/* Only for admin page (table) */
+.admin-container {
+    max-width: 700px; /* or 1000px */
+}

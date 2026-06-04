@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<script>
+if (!localStorage.getItem("admin")) {
+    window.location.href = "admin-login.html";
+}
+</script>
+
+<head>
+<title>Admin - Registrations</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container admin-container">
+
+<h2>Registered Students</h2>
+
+<div class="table-wrapper">
+<table border="0.5" id="dataTable">
+
+<tr>
+<th>Name</th>
+<th>Email</th>
+<th>department</th>
+<th>year</th>
+<th>Event</th>
+</tr>
+
+</table>
+</div>
+
+</div>
+
+<script type="module" src="admin.js"></script>
+
+</body>
+</html>
